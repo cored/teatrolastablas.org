@@ -33,4 +33,10 @@ img { border-color:red; border:2px;}
 		-moz-box-shadow: 0 2px 5px rgba(0,0,0,0.25); */
 		margin: 20 0 10px 0; }
 
+#featured {
+  width: 359px;
+  height: 464px;
+  background: #000 url('images/orbit/loading.gif') no-repeat center center; overflow: hidden; }
+#featured img,
+#featured div { display: none; }
 
