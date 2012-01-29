@@ -160,7 +160,7 @@
 	blockquote cite:before { content: "\2014 \0020"; }
 	blockquote cite a, blockquote cite a:visited { color: #555; }
 	
-	hr { border: solid #ddd; border-width: 1px 0 0; clear: both; margin: 12px 0 18px; height: 0; }
+	hr { border: solid #ffd462; border-width: 1px 0 0; clear: both; margin: 12px 0 18px; height: 0; }
 	
 	abbr, acronym { text-transform: uppercase; font-size: 90%; color: #222; border-bottom: 1px solid #ddd; cursor: help; }
 	abbr { text-transform: none; }
@@ -195,13 +195,13 @@
 	
 	-------------------------------------------------- */
 
-	.container { padding: 0 20px; }
+	.container { padding: 0 20px; } /*default padding:0 20px;*/
 	
-	.row { width: 100%; max-width: 980px; min-width: 727px; margin: 0 auto; }
+	.row { width: 100%; max-width: 980px; min-width: 727px; margin: 0 auto;} /*--max-width:980px default */
 	/* To fix the grid into a certain size, set max-width to width */
 	.row .row { min-width: 0; }
 	
-	.column, .columns { margin-left: 4.4%; float: left; min-height: 1px; position: relative; }
+	.column, .columns { margin-left: 4.4%; float: left; min-height: 1px; position: relative;}
 	.column:first-child, .columns:first-child { margin-left: 0; }
 	
 	.row .one.columns 		{ width: 4.3%; }
