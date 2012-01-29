@@ -147,9 +147,10 @@
             <script type="text/javascript">
               $(window).load(function() {
                   $('#featured').orbit({
-			pauseOnHover: false, 		 // if you hover pauses the slider
-     			directionalNav: true, 		 // manual advancing directional navs
-		})
+                    bullets: true,
+                    directionalNav: true,  // manual advancing divrectional navs
+                    animation: "horizontal-push"
+		               })
                });
             </script>
 
