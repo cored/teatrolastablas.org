@@ -14,7 +14,11 @@ get '/' do
   erb :index
 end
 
-get '/home' do 
-  erb :home
+get '/projects' do 
+  erb :projects
+end
+
+get '/support' do 
+  erb :support
 end
 
