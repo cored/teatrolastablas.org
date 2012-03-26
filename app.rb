@@ -38,4 +38,3 @@ end
 get '/support' do 
   erb :support
 end
-
