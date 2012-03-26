@@ -1,6 +1,10 @@
 <div id="featured">
   <% @slider_images.each do |file| %>
-    <img src="images/slider/<%= file %>" alt="SliderImage" />
+    <div id="<%= file %>" class="reveal-modal">
+      <a href="#" class="close-reveal-modal">&#215;</a>
+      <img src="images/slider/big/<%= file %>" alt="<%= file %>" />
+    </div>
+    <a href="#" data-reveal-id="<%= file %>"><img src="images/slider/<%= file %>" alt="<% file %>" /></a>
   <% end %>
   <!-- <p class="this">El Conde de Montecristo: Lectura dram&aacute;tica de la adaptaci&oacute;n teatral en espa&ntilde;ol del Cl&aacute;sico franc&eacute;s</p> -->
 </div>
