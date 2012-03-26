@@ -11,6 +11,10 @@ set :public_folder, 'public'
 set :views, 'views'
 
 get '/' do 
-  erb :layout
+  erb :index
+end
+
+get '/home' do 
+  erb :home
 end
 
