@@ -21,7 +21,9 @@ end
 before do 
   @slider_images = []
   Dir.foreach(settings.slider_images_folder) do |file|
-    @slider_images << file unless file == "." || file == ".."
+    unless file == "." || file == ".."
+      @slider_images << file 
+    end
   end
 end
 
