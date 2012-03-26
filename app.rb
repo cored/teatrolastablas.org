@@ -18,13 +18,15 @@ helpers do
   end
 end
 
-get '/' do 
+before do 
   @slider_images = []
   Dir.foreach(settings.slider_images_folder) do |file|
     @slider_images << file unless file == "." || file == ".."
   end
+end
 
-  erb :index, :locals => {:slider_images => @slider_images} 
+get '/' do 
+  erb :index 
 end
 
 get '/projects' do 
