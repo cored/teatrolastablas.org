@@ -10,6 +10,12 @@ set :root, File.dirname(__FILE__)
 set :public_folder, 'public'
 set :views, 'views'
 
+helpers do 
+  def partial(page, options = {})
+    erb page, options.merge!(:layout => false)
+  end
+end
+
 get '/' do 
   erb :index
 end
