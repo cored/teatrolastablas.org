@@ -20,10 +20,10 @@ end
 
 before do 
   @slider_images = []
-  Dir.foreach(settings.slider_images_folder) do |file|
-    unless file == "." || file == ".."
-      @slider_images << file 
-    end
+  Dir.foreach(settings.slider_images_folder) do |image|
+    #FIXME: This look awful
+    next if image == "." || image == ".." || image == "big" 
+    @slider_images << image 
   end
 end
 
