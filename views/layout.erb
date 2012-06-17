@@ -51,57 +51,49 @@
                   </div>
                   </li>
                   <li><a href="<%= url('/support') %>">Support</a>
-                  <div class="flyout small">
-                    Help us continue our work.
-                  </div>
-                  </li>
-                </ul>
+                    <div class="flyout small">
+                      Help us continue our work.
+                    </div>
+                    </li>
+                  </ul>
+                </div>
+                <div class="three columns">
+                  <a href="#"><img src="images/icons/facebook.png"></a>
+                  <a href="#"><img src="images/icons/twitter.png"></a>
+                </div>
               </div>
-              <div class="three columns">
-                <a href="#"><img src="images/icons/facebook.png"></a>
-                <a href="#"><img src="images/icons/twitter.png"></a>
+
+              <div class="row">
+                <div class="eight columns">
+                  <%= yield %>
+                </div>
+
+                <div class="four columns">			
+                  <%= partial :slider %>
+                </div>
+              </div>
+              <div class="row footer">
+                <div class ="three columns">
+                </div>
+                <div class="six columns"> 
+                  <h3 class="this">Further Information about us?</h3>
+                  <p class="this high">Teatro Las Tablas 11 Broadway Terrace 3D, New York, NY, 10040 212.569.9115</p>
+                </div>
+                <div class="three columns">
+                </div>
               </div>
             </div>
 
-            <div class="row">
-              <div class="eight columns">
-                <%= yield %>
-              </div>
-
-              <div class="four columns">			
-                <%= partial :slider %>
-              </div>
-            </div>
-            <div class="row footer">
-              <div class ="three columns">
-              </div>
-              <div class="six columns"> 
-                <h3 class="this">Further Information about us?</h3>
-                <p class="this high">Teatro Las Tablas 11 Broadway Terrace 3D, New York, NY, 10040 212.569.9115</p>
-              </div>
-              <div class="three columns">
-              </div>
-            </div>
-          </div>
-
-          <!-- container -->
+            <!-- container -->
 
 
 
-          <!-- Included JS Files -->
-          <script src="javascripts/foundation.js"></script>
-          <script src="javascripts/app.js"></script>
-          <script src="javascripts/jquery-1.5.1.min.js"></script>
-          <script src="javascripts/jquery.orbit-1.2.3.min.js"></script>
-          
-          <script type="text/javascript">
-            $(window).load(function() {
-                $('#featured').orbit({
-pauseOnHover: false, 		 // if you hover pauses the slider
-directionalNav: true, 		 // manual advancing directional navs
-})
-                });
-</script>
+            <!-- Included JS Files -->
+            <script src="javascripts/foundation.js"></script>
+            <script src="javascripts/app.js"></script>
+            <script src="javascripts/jquery-1.5.1.min.js"></script>
+            <script src="javascripts/jquery.orbit-1.2.3.min.js"></script>
+            
 
 </body>
 </html>
