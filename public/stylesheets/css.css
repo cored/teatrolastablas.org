@@ -40,3 +40,11 @@ ul.nav-bar a {color:#ab3700;}
 		margin: 20 0 10px 0; }
 
 
+/* --- modal stylizing --- */
+   .modal{ 
+   background:#f6efdf;
+   font-family: "Calibri", "Trebuchet MS";
+   font-size:14px;
+   }
+   
+   .modal h2{font-size: 32px;font-weight:bold;color:#561c00; } 
